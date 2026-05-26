@@ -1,16 +1,59 @@
-# React + Vite
+# 🏎️ F1 Hamilton Loader
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React loading component inspired by Formula 1, featuring an animated GIF with a pulsing text effect.
 
-Currently, two official plugins are available:
+## Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![F1 Hamilton Loader](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHY5Z3l1NmpqeDY1c3J2OWk3eXBmd3locDliNWZwMjJxa21jNHU0NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VFwnvJZ871lHlfYIBT/giphy.gif)
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- SCSS
+- Google Fonts (Orbitron)
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
+
+## Usage
+
+```jsx
+import F1HamiltonLoader from './F1HamiltonLoader';
+
+// Basic usage
+<F1HamiltonLoader />
+
+// Custom text
+<F1HamiltonLoader text="Loading..." />
+
+// With conditional rendering
+const [loading, setLoading] = useState(true);
+
+{loading ? (
+  <F1HamiltonLoader text="Loading..." />
+) : (
+  <YourContent />
+)}
+```
+
+## Features
+
+- Animated F1 sticker with transparent background
+- Pulsing text animation
+- Customizable loading text via props
+- Orbitron font for F1 aesthetic
+- Fully reusable React component
+
+## Credits
+
+F1 sticker GIF via [Giphy](https://giphy.com/stickers/VFwnvJZ871lHlfYIBT)
+
+## Author
+
+Made with ❤️ and a love for Formula 1 🏁
+ by fanuchi
